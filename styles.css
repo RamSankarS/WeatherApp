@@ -13,7 +13,7 @@ body{
 main{
     min-width: 620px;
     min-height: 638px;
-    background-image: linear-gradient(315deg, #ffffff 0%, #5899e2 74%);
+    background: linear-gradient(109.6deg, rgb(43, 1, 91) 13.4%, rgb(122, 2, 54) 100.2%);
     border-radius: 20px;
     border: none;
 }
@@ -26,16 +26,49 @@ section{
     align-items: center;
 }
 section .searchBox{
-    padding-left: 82px;
-    padding-right: 46px;
-    padding-top: 26px;
-    margin-right: 10px;
+    margin-right: 50px;
     border-radius: 20px;
+    height: 45px;
+    width: 300px;
+    padding: 15px;
+    font-size: large;
     border: none;
     margin-top: 60px;
     cursor: pointer;
-}
-section .searchIcon{
-    margin-top: 60px;
+    transition: 1s;
 }
 
+section .searchBox:focus{
+    box-shadow: 2px 2px 20px 1px;
+    transform: scale(1.1);
+    border: none;
+    border-color: #ffffff;
+}
+
+section .searchBox:hover{
+    transform: scale(1.1);
+    border-color: #ffffff;
+}
+
+section .searchIcon{
+    margin-top: 60px;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+section .searchIcon:hover{
+    transform: scale(1.3);
+}
+
+article{
+    display: flex;
+    justify-content: space-around;
+    margin-top: 50px;
+}
+
+content{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 350px;
+}
